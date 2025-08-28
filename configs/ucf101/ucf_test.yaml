@@ -1,0 +1,46 @@
+pretrain: 
+seed: 1024
+data:
+    root: 'enter your file root'
+    dataset: ucf101
+    modality: RGB
+    num_segments: 8
+    seg_length: 1
+    split: 1
+    batch_size: 32
+    workers: 1
+    num_classes: 101
+    image_tmpl: 'img_{:05d}.jpg'
+    train_list: '/net/scratch/lists/ucf101/train_rgb_7shot_split1.txt'
+    val_list: '/net/scratch/lists/ucf101/test_rgb_split1_fixed.txt' 
+    label_list: 'lists/ucf_labels.csv'
+    index_bias: 1
+    input_size: 224
+    randaug:
+        N: 0 #2
+        M: 0  #9
+        
+solver:
+    evaluate: True
+    resume: '/net/scratch/NEW_adapter/pt/model_best.pt'     
+    epochs: 1 
+    use_text_adapter: True
+    text_adapter_layers: [11]
+    text_adapter_dim: 128
+    use_visual_adapter: True
+    visual_adapter_layers: [10,11]
+    visual_adapter_dim: 128  
+        
+network:
+    arch: ViT-B/16  #ViT-B/32 ViT-B/16
+    init: True 
+    drop_out: 0.0 
+    emb_dropout: 0.0 
+    type: clip_ucf
+    sim_header: "Transf"   #Transf   meanP  LSTM Conv_1D Transf_cls
+    fix_text: False
+    fix_img: False
+    describe:
+logging:
+    print_freq: 10
+    eval_freq: 1
