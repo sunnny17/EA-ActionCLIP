@@ -32,6 +32,7 @@ This repository contains code, configs, and scripts to reproduce the experiments
 ### Training (example with Slurm on HMDB51)
 ```bash
 sbatch run_hmdb.sh
+```bash
 
 ### Evaluation (example with UCF101, interactive mode)
 python evaluation.py --config configs/ucf101/ucf_test.yaml \
