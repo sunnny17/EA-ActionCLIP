@@ -76,7 +76,7 @@ python evaluation.py --config configs/ucf101/ucf_test.yaml \
 | Transfer         | Summary                                                                 |
 |------------------|-------------------------------------------------------------------------|
 | HMDB51 → UCF101  | EA-ActionCLIP outperformed the base by **+8–9% (avg)**                  |
-| UCF101 → HMDB51  | EA-ActionCLIP higher at 1-shot (+4.8%), then slight declines (–0.5% to –2.2%) as shots increase |
+| UCF101 → HMDB51  | EA-ActionCLIP higher at 1-shot (+2.3%), then slight declines (–0.5% to –2.2%) as shots increase |
 
 > Detailed Top-5 accuracy and per-shot tables are available in the dissertation.
 
