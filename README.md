@@ -79,3 +79,16 @@ python evaluation.py --config configs/ucf101/ucf_test.yaml \
 | UCF101 → HMDB51  | EA-ActionCLIP higher at 1-shot (+4.8%), then slight declines (–0.5% to –2.2%) as shots increase |
 
 > Detailed Top-5 accuracy and per-shot tables are available in the dissertation.
+
+---
+
+## License
+
+MIT License (including original ActionCLIP license notice).
+
+---
+
+## Citation
+
+- If you use this code, please cite: ActionCLIP (https://github.com/sallymmx/ActionCLIP)
+- My MSc dissertation (citation info TBD)
