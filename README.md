@@ -88,6 +88,12 @@ MIT License (including original ActionCLIP license notice).
 
 ---
 
+## Use of Generative AI
+ChatGPT was used to assist in debugging and fixing code errors during development. 
+All model design, experiments, and evaluations were conducted by the author.
+
+---
+
 ## Citation
 
 - If you use this code, please cite: ActionCLIP (https://github.com/sallymmx/ActionCLIP)
